@@ -2,7 +2,7 @@
 [![Java: 17](https://img.shields.io/badge/Java-17+-green)](#)
 [![UPTC](https://img.shields.io/badge/UPTC-Programacion%202-yellowgreen)](#)
 
-Proyecto que implementa la logica e interfaz con FX de un sistema para gestionar fletes en el departamento de Boyacá donde tanto empresarios que deseen ofertar sus fletes como para transportadores que quieran transportar esas cargas utilizando herramientas vistas a lo largo del semestre de Programación II de Ingeniería de Sistemas y Computación de la [uptc](http://www.uptc.edu.co).
+Proyecto que implementa la logica e interfaz con Java Swing de un sistema para una clinica odontologica en el deplartamento de Boyacá que permitirá dejar de utilizar papel para guardar los registros de procedimientos realizados a los pacientes, utilizando herramientas vistas a lo largo del semestre de Programación II de Ingeniería de Sistemas y Computación de la [uptc](http://www.uptc.edu.co).
 
 ## Elementos de la Clase
 
@@ -53,9 +53,9 @@ Proyecto que implementa la logica e interfaz con FX de un sistema para gestionar
 
 ## Responsables
 
-- Daniel Snatiago Espinosa Castro
+- Rafael Esteban Lozano Vargas
 - Cristian Camilo Galindo Suárez
 
 ## Instrucciones
 
-- Clone su copia (Git clone https://github.com/Cristian13Galindo/Proyecto2do50SwingProgra2.git)
+- Clone su copia (Git clone https://github.com/Cristian13Galindo/RepoFxUptc.git)
