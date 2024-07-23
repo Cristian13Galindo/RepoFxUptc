@@ -10,6 +10,8 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 public class JsonFileWriter {
+    private static final String FILE_PATH = System.getProperty("user.dir") + "/src/co/edu/uptcSoft/files/pacientes.json";
+
     public static void addPaciente(Paciente paciente) {
         ArrayList<Paciente> pacientes = readJson();
 
@@ -27,7 +29,7 @@ public class JsonFileWriter {
 
     private static ArrayList<Paciente> readJson() {
         Gson gson = new Gson();
-        try (FileReader reader = new FileReader("ProyectoSwing/src/co/edu/uptcSoft/files/pacientes.json")) {
+        try (FileReader reader = new FileReader(FILE_PATH)) {
             Type type = new TypeToken<ArrayList<Paciente>>() {}.getType();
             return gson.fromJson(reader, type);
         } catch (IOException e) {
@@ -40,7 +42,7 @@ public class JsonFileWriter {
         Gson gson = new Gson();
         String json = gson.toJson(pacientes);
 
-        try (FileWriter file = new FileWriter("ProyectoSwing/src/co/edu/uptcSoft/files/pacientes.json")) {
+        try (FileWriter file = new FileWriter(FILE_PATH)) {
             file.write(json);
             System.out.println("Se pudo escribir el archivo correctamente");
         } catch (IOException e) {
