@@ -47,7 +47,9 @@ public class MenuUserDentistWindow extends javax.swing.JFrame {
     }
 
     //Constructor vacio
+    //Constructor vacio
     public MenuUserDentistWindow() {
+        this.loginWindow = new LoginWindow();
         initComponents();
         setLocationRelativeTo(null);
         setResizable(false);
@@ -75,6 +77,7 @@ public class MenuUserDentistWindow extends javax.swing.JFrame {
                 loginWindow.setVisible(true);
             }
         });
+
 
         btnCreateNewPacient.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -244,7 +247,7 @@ public class MenuUserDentistWindow extends javax.swing.JFrame {
         }
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new MenuUserDentistWindow().setVisible(true);
+                new MenuUserDentistWindow(new LoginWindow()).setVisible(true);
             }
         });
     }
